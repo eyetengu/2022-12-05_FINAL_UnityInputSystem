@@ -16,6 +16,7 @@ public class ChargeSuperBallBounce : MonoBehaviour
 
         _ballInput.Ball.ChargedBounce.performed += ChargedBounce_performed;
         _ballInput.Ball.ChargedBounce.canceled += ChargedBounce_canceled;
+        Debug.Log("Hello there");
     }
 
     private void ChargedBounce_canceled(UnityEngine.InputSystem.InputAction.CallbackContext context)
