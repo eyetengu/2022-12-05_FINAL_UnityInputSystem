@@ -1,0 +1,243 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "cc15ea8d-5261-4598-b8b6-635df290d2a1",
+            "actions": [
+                {
+                    "name": "ChangeCubeColor",
+                    "type": "Button",
+                    "id": "dddb5deb-01fb-416e-8395-0390257b6827",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RotateCube",
+                    "type": "Button",
+                    "id": "8e947566-16a4-4d43-b027-d2299fbcf05e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchToDriving",
+                    "type": "Button",
+                    "id": "b2b3bbf8-c75a-4d3b-a1be-29f25dad9d70",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2ce9f573-5e89-4384-bb6b-03088e299567",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeCubeColor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "544e315b-26e4-4efa-b637-6a22fc16918b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateCube",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0889e069-725e-40c4-b9dd-13847ca16c1f",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "RotateCube",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c3a016de-dfa0-45d5-b1aa-8ce3b0a7f25d",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "RotateCube",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a400f73b-37d3-4da8-98e0-06d2a4261e17",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToDriving",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Driving",
+            "id": "538bb00d-bcce-4e7f-a8c8-d1e1fe6f98e2",
+            "actions": [
+                {
+                    "name": "DrivingCar",
+                    "type": "Value",
+                    "id": "b6d2c378-55b9-4a4f-a732-bd7765369455",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SwitchToPlayer",
+                    "type": "Button",
+                    "id": "7a87dc12-c2e8-4d7a-89c0-2855a25a094e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "d1b181ad-9999-4d96-a678-9c35cb93aaca",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ab2b3f1c-9c30-486b-911e-0d3a1b6e8d02",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f651c574-3631-4bb4-aaf6-7d9aa81ec776",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "1db8734e-3c58-469e-9db9-4f422b0f05e1",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b686e2c6-1b32-4e4b-a302-5eeed2131d50",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "0d952831-a0d6-4133-85d6-15221aefacae",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "83bd2584-065f-42d5-9879-096261bc4e97",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "a2ed35a9-d0e8-4eac-ae80-55d555e8b713",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "a38783c4-804a-4c2f-8594-d078a6cc399e",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "95af7e30-843d-469b-b90b-3de9066f78d1",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DrivingCar",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "8c84a1bf-51af-4826-8626-679293191fea",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

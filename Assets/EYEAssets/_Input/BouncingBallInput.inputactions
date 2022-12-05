@@ -1,0 +1,34 @@
+{
+    "name": "BouncingBallInput",
+    "maps": [
+        {
+            "name": "Ball",
+            "id": "b33f405e-99b2-4567-ab91-09b8b5214843",
+            "actions": [
+                {
+                    "name": "ChargedBounce",
+                    "type": "Button",
+                    "id": "4501e691-d141-4fdf-96a1-f9fee724351c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "421f88b7-b780-41b5-92b3-beed555d44ed",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold(duration=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChargedBounce",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
